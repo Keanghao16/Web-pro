@@ -1,0 +1,95 @@
+.login-button {
+    background-color: orange;
+    color: black;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover {
+    background-color: lightgreen;
+}
+
+.signup-button {
+    background-color: lightgreen;
+    color: black;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.signup-button:hover {
+    background-color: orange;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+.nav-link {
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active {
+    color: orange;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: orange;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+body {
+    font-family: 'jost', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../img/Main\ BG.png");
+    height: 100vh !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section p{
+    margin-top: 50px; /* Adjust the top margin to move the section below the navigation bar */
+}
+.container .text-center {
+    color: black; 
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+footer a {
+    color: #000; /* Set link color to black */
+    text-decoration: none;
+}

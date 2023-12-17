@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+        <title>Trip Planner - Index</title>
+        
+        <meta content="Generate your perfect trip." name="description">
+        <meta content="" name="keywords">
+        <link href="img/thefavicon.png" rel="icon">
+        <link href="img/lesmobilesicon.png" rel="apple-touch-icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.css"
+        integrity="sha512-0a2lblVHmqVJvdSM2uIPoshRsH4t5df0Np/U+92UgZ/YxgYpdvSwptZkEayYVyo1ZHoiGbTqW/TtBRqvndSqZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+        integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css"
+        integrity="sha512-vgK7iuWG4Uq4GJHovntONntOoSduelAYImQTT3f0mvdUcI95qQgSmf4ldDhn/FNl3g/xouqOtsm/NxFqaTnxbA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+        integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="style/style.css" rel="stylesheet">
+    
+    </head>
+    <body>
+        <div id="blur">
+            <header id="header" class="fixed-top" >
+                <div class="container d-flex align-items-center">
+    
+                <h1 class="logo me-auto"><a href="index.html"><img src="img/triplogo.png" alt=""></a></h1>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#events">Events</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+    
+                    <!-- Signup&Login -->
+                    <li><a class="loginsignups scrollto" href="#" onclick="toggleSignup()">Sign Up</a></li>
+                    <li><a class="loginsignups scrollto" href="#" onclick="toggleLogin()">Login</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+    
+                </div>
+            </header>
+
+
+
+            <!--HERO-->
+            <section id="hero" class="d-flex">
+                
+                <img class="mainbg" src="img/mainbg1.png" alt="" data-aos="fade-in">
+                <div class="container">
+                    <div class="row mt-lg-5">
+                        <div class="align-items-center mt-5 d-flex flex-column pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                        <h1 class="mt-4 ">PLAN YOUR <span class="highlight">TRIP</span></h1>
+                        <h2>Let Us Plan The Perfect Trip For You!</h2>
+                        <div class="d-flex justify-content-lg-start">
+                            <a href="#" class="btn-get-started scrollto">Get Started</a>
+                            
+                        </div>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- popup -->
+        <div class="main" id="popup">
+            <!-- login Form -->
+
+            <div class="form login" id="loginForm" style="display: block;">
+                <div class="form-content">
+                    <div class="text-end">
+                        <button type="button" class="btn-close" id="closeBtn" aria-label="Close" onclick="toggleSignup()"></button>
+                    </div>
+                    <div class="text-start">
+                        <img src="img/tripplannerBlack.png" alt="logo">
+                    </div>
+                    <div class="text-center mt-3">
+                        <label class="fs-5 "><b>Login your account with<br>Trip Planner</b></label>
+                    </div>
+
+                    <div class="media-options">
+                        <a href="#" class="text-decoration-none field google border border-2 rounded-pill">
+                            <img src="img/googleLOGO.png" alt="" class="google-img ms-0">
+                            <span class="text-black ms-4">Continue with Google</span>
+                        </a>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <form action="#">
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control border border-2 rounded-pill input" placeholder="Email address" required>
+                            <label for="floatingInput">Email address</label>
+                        </div>
+
+                        <div class="form-floating">
+                            <input type="password" class="form-control border border-2 rounded-pill password" placeholder="Password" required>
+                            <label for="floatingInput">Password</label>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass text-decoration-none text-success">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button class="btn btn-success border border-2 rounded-pill">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link text-decoration-none text-success" id="signupLink">Sign up</a></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Signup Form -->
+            
+            <div class="form signup" id="signupForm" style="display: none;">
+                <div class="form-content">
+                    <div class="text-end">
+                        <button type="button" class="btn-close" id="closeBtn" aria-label="Close" onclick="toggleLogin()"></button>
+                    </div>
+                    <div class="text-start">
+                        <img src="img/tripplannerBlack.png" alt="logo">
+                    </div>
+                    <div class="text-center mt-3">
+                        <label class="fs-5 "><b>Sign up your account with<br>Trip Planner</b></label>
+                    </div>
+
+                    <div class="media-options">
+                        <a href="#" class="text-decoration-none field google border border-2 rounded-pill">
+                            <img src="img/googleLOGO.png" alt="" class="google-img ms-0">
+                            <span class="text-black ms-4">Continue with Google</span>
+                        </a>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <form action="#">
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control border border-2 rounded-pill input" placeholder="Email address" required>
+                            <label for="floatingInput">Email address</label>
+                        </div>
+
+                        <div class="form-floating">
+                            <input type="password" class="form-control border border-2 rounded-pill password" placeholder="Password" required>
+                            <label for="floatingInput">Password</label>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button class="btn btn-success border border-2 rounded-pill">Sign Up</button>
+                        </div>
+                    </form>
+
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link text-decoration-none text-success" id="loginLink">Login</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--MAIN-->
+        <main id="main">
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-6">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                </p>
+                <ul>
+                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                    <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                    <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us section-bg">
+            <div class="container-fluid" data-aos="fade-up">
+
+            <div class="row">
+
+                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                <div class="content">
+                    <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                    </p>
+                </div>
+
+                <div class="accordion-list">
+                    <ul>
+                    <li>
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                        <p>
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                        </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                        <p>
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                        </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                        <p>
+                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                        </p>
+                        </div>
+                    </li>
+
+                    </ul>
+                </div>
+
+                </div>
+
+                <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+            </div>
+
+            </div>
+        </section><!-- End Why Us Section -->
+
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Team</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="img/teammember.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                    <h4>Thou Sokphanun</h4>
+                    <span>Chief Executive Officer</span>
+                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                    <div class="social">
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="img/teammember.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                    <h4>Tie Keanghao</h4>
+                    <span>Product Manager</span>
+                    <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                    <div class="social">
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="img/teammember.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                    <h4>Thon Ratha</h4>
+                    <span>CTO</span>
+                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                    <div class="social">
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                
+
+            </div>
+
+            </div>
+        </section><!-- End Team Section -->
+
+
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="faq-list">
+                <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                    <p>
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                    </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                    </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="300">
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                    </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                    </p>
+                    </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="500">
+                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                    </p>
+                    </div>
+                </li>
+
+                </ul>
+            </div>
+
+            </div>
+        </section><!-- End Frequently Asked Questions Section -->
+        </main>
+        <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>TRIP PLANNER</h3>
+                <p>
+                    1234 BKK <br>
+                    SENSOK, PHNOM PENH 56789<br>
+                    Cambodia <br><br>
+                    <strong>Phone:</strong> +85512345678<br>
+                    <strong>Email:</strong> info@tripplanner.com<br>
+                </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Customer Care</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Find Hotel</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Accomodations</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Transportation</a></li>
+                </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                <div class="social-links mt-3">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+            &copy; Copyright <strong><span>TRIP PLANNER</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+            Designed by <a href="#">Your BoY SaTuRn</a>
+            </div>
+        </div>
+        </footer>
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+        integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"
+        integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"
+        integrity="sha512-Q4MHJkk3u8P63v1aX0I7jvo5AoMFi53HbxUBhURp8x7xrqD+nsHZrbBEQVObpqE+MAAVB/Ye9ZlKkM44a1q9WA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
