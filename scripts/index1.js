@@ -55,3 +55,8 @@ signupLink.addEventListener("click", () => {
   signupForm.style.display = "block";
 });
 
+// Default Gulp Task
+exports.Default = series(scssTask, jsTask, browserSyncServer, watchTask);
+
+// Build Gulp Task
+exports.build = series(scssTask, jsTask);
